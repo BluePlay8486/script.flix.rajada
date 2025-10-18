@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <!-- 🧩 Categoria principal -->
+    <category label="Geral">
+        <setting id="scraper_timeout" type="slider" label="Tempo limite (segundos)" option="int" range="5,1,60" default="25"/>
+        <setting id="thread_number" type="slider" label="Número de threads" option="int" range="1,1,20" default="10"/>
+        <setting id="enable_bg_dialog" type="bool" label="Mostrar progresso em segundo plano" default="true"/>
+    </category>
+
+    <!-- 🌐 Provedores -->
+    <category label="Provedores">
+        <setting id="rajada" type="bool" label="Rajada Oficial" default="true"/>
+        <setting id="torrentgalaxy" type="bool" label="TorrentGalaxy" default="true"/>
+        <setting id="1337x" type="bool" label="1337x" default="true"/>
+    </category>
+
+    <!-- 🎬 Filtros -->
+    <category label="Filtros">
+        <setting id="require_resolution" type="bool" label="Exigir resolução" default="false"/>
+        <setting id="require_release_type" type="bool" label="Exigir tipo de release" default="false"/>
+        <setting id="require_size" type="bool" label="Exigir tamanho do arquivo" default="false"/>
+        <setting id="require_seeds" type="bool" label="Exigir seeds" default="false"/>
+    </category>
+
+    <!-- 📺 Resoluções -->
+    <category label="Resoluções permitidas">
+        <setting id="include_resolution_240p" type="bool" label="240p" default="false"/>
+        <setting id="include_resolution_480p" type="bool" label="480p" default="true"/>
+        <setting id="include_resolution_720p" type="bool" label="720p" default="true"/>
+        <setting id="include_resolution_1080p" type="bool" label="1080p" default="true"/>
+        <setting id="include_resolution_4k" type="bool" label="4K" default="true"/>
+    </category>
+</settings>
