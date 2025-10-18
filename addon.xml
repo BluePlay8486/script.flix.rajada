@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.flix.rajada"
+       name="Flix Rajada Provider"
+       version="1.0.0"
+       provider-name="Supreme Devs">
+
+    <!-- Dependências necessárias -->
+    <requires>
+        <!-- Python base -->
+        <import addon="xbmc.python" version="3.0.1" />
+        <!-- Addon do Flix -->
+        <import addon="plugin.video.flix" version="1.0.0" />
+        <!-- Biblioteca Torrest/Elementum opcional -->
+        <import addon="plugin.video.torrest" optional="true" />
+        <import addon="plugin.video.elementum" optional="true" />
+        <!-- Dependências auxiliares -->
+        <import addon="script.module.requests" version="2.27.1" />
+        <import addon="script.module.six" optional="true" />
+    </requires>
+
+    <!-- Ponto de extensão Flix Provider -->
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+
+    <!-- Metadata do addon -->
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Rajada Provider for Flix</summary>
+        <summary lang="pt_BR">Provedor Rajada para Flix</summary>
+
+        <description lang="en">
+            Hybrid Flix provider using the Rajada engine (Elementum) to fetch and stream torrent-based content.
+        </description>
+        <description lang="pt_BR">
+            Provedor híbrido para o Flix que utiliza o motor Rajada (Elementum) para buscar e reproduzir conteúdo via torrents.
+        </description>
+
+        <disclaimer lang="pt_BR">
+            Este addon é apenas um integrador de provedores Rajada para Flix. Nenhum conteúdo é hospedado localmente.
+        </disclaimer>
+
+        <!-- Informações visuais -->
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+
+        <!-- Informações extras -->
+        <source>https://github.com/supreme-devs/script.flix.rajada</source>
+        <license>MIT</license>
+        <website>https://github.com/supreme-devs</website>
+        <forum>https://t.me/supremeflix</forum>
+        <email>support@supremeflix.dev</email>
+        <platform>all</platform>
+        <language>pt_BR</language>
+    </extension>
+
+</addon>
